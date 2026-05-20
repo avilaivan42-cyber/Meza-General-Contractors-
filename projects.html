@@ -21,11 +21,38 @@ h1,h2,h3,h4,h5{font-family:"Oswald",sans-serif;font-weight:700;line-height:1.15;
 footer{background:#0d1f52;padding:48px 0 24px;}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:32px;}.fn{font-family:"Oswald",sans-serif;font-weight:700;font-size:1.02rem;color:#fff;margin-bottom:10px;}.brand-p{font-size:.84rem;color:rgba(255,255,255,.5);line-height:1.7;max-width:250px;}.f-phone a{display:block;margin-top:12px;font-family:"Oswald",sans-serif;font-size:1.05rem;font-weight:700;color:#fff;text-decoration:none;}footer h5{font-family:"Oswald",sans-serif;font-size:.78rem;letter-spacing:.14em;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:12px;}footer ul{list-style:none;}footer ul li{margin-bottom:7px;}footer ul li a{font-size:.84rem;color:rgba(255,255,255,.58);text-decoration:none;}footer ul li a:hover{color:#fff;}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;display:flex;justify-content:space-between;align-items:center;font-size:.78rem;color:rgba(255,255,255,.35);}
 .lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:1000;align-items:center;justify-content:center;}.lb.open{display:flex;}.lb-wrap{position:relative;max-width:92vw;max-height:92vh;}.lb-wrap img{max-width:88vw;max-height:86vh;object-fit:contain;border-radius:4px;display:block;}.lb-x{position:absolute;top:-14px;right:-14px;width:34px;height:34px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1rem;font-weight:700;border:none;}.lb-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.14);border:none;color:#fff;width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:1.6rem;display:flex;align-items:center;justify-content:center;}.lb-btn:hover{background:rgba(255,255,255,.26);}.lb-prev{left:-52px;}.lb-next{right:-52px;}.lb-info{position:absolute;bottom:-24px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.55);font-size:.78rem;white-space:nowrap;}
 @media(max-width:960px){.stat-row{grid-template-columns:repeat(2,1fr);}.photo-grid .feature{grid-column:span 1;grid-row:span 1;}.photo-item.feature img{height:200px;}.nav-links{display:none;}.footer-grid{grid-template-columns:1fr 1fr;}.lb-prev{left:-6px;}.lb-next{right:-6px;}}@media(max-width:600px){.photo-grid{grid-template-columns:repeat(2,1fr);}.photo-item img,.photo-item.feature img{height:140px;}.stat-row{grid-template-columns:repeat(2,1fr);}.top-bar-left{display:none;}.top-bar .wrap{justify-content:flex-end;}.footer-grid{grid-template-columns:1fr;}.hero-row{gap:20px;}}
+
+.hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:38px;height:38px;background:none;border:none;cursor:pointer;padding:4px;flex-shrink:0;}
+.hamburger span{display:block;height:3px;background:var(--blue);border-radius:2px;transition:all .28s ease;}
+.hamburger.open span:nth-child(1){transform:translateY(8px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+.hamburger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
+.mobile-menu{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-top:1px solid var(--g200);border-bottom:3px solid var(--red);box-shadow:0 8px 24px rgba(0,0,0,.12);z-index:199;}
+.mobile-menu.open{display:block;}
+.mobile-menu ul{list-style:none;padding:8px 0;}
+.mobile-menu ul li a{display:block;padding:14px 24px;font-family:"Lato",sans-serif;font-size:1rem;font-weight:700;color:var(--blue);text-decoration:none;border-bottom:1px solid var(--g100);transition:background .15s,color .15s;}
+.mobile-menu ul li a:hover{background:var(--blue-lt);color:var(--red);}
+.mobile-menu ul li:last-child a{background:var(--red);color:#fff;text-align:center;border-bottom:none;margin:12px 16px;border-radius:4px;padding:14px 24px;}
+.mobile-menu ul li:last-child a:hover{background:var(--red-dk);}
+@media(max-width:960px){.hamburger{display:flex;}.nav-links{display:none !important;}.navbar{position:relative;}}
+
 </style>
 </head>
 <body>
 <div class="top-bar"><div class="wrap"><div class="top-bar-left"><div class="tbi"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="#888" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg><span>Houston, TX &#8212; Serving a 100-Mile Radius</span></div><div class="tbi"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="#888" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>Mon&ndash;Sat &nbsp;8 AM &ndash; 7 PM</span></div></div><div class="top-bar-right"><a href="tel:3462814358" class="top-phone">(346) 281-4358</a><a href="sms:3462814358" class="top-sms">Text Us</a></div></div></div>
-<header class="navbar"><div class="wrap"><a href="index.html" class="nav-logo"><img src="https://raw.githubusercontent.com/avilaivan42-cyber/Meza-General-Contractors-/main/logo.png" alt="Meza General Contractors"><div><span class="logo-name">MEZA GENERAL CONTRACTORS</span><span class="logo-tag">Roofing &amp; General Contracting &nbsp;&middot;&nbsp; Houston, TX &nbsp;&middot;&nbsp; Since 1958</span></div></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="insurance-claims.html">Insurance Claims</a></li><li><a href="commercial.html">Commercial</a></li><li><a href="about.html">About</a></li><li class="cur"><a href="projects.html">Projects</a></li><li class="cta-li"><a href="contact.html">Free Damage Assessment</a></li></ul></div></header>
+<header class="navbar"><div class="wrap"><a href="index.html" class="nav-logo"><img src="https://raw.githubusercontent.com/avilaivan42-cyber/Meza-General-Contractors-/main/logo.png" alt="Meza General Contractors"><div><span class="logo-name">MEZA GENERAL CONTRACTORS</span><span class="logo-tag">Roofing &amp; General Contracting &nbsp;&middot;&nbsp; Houston, TX &nbsp;&middot;&nbsp; Since 1958</span></div></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="insurance-claims.html">Insurance Claims</a></li><li><a href="commercial.html">Commercial</a></li><li><a href="about.html">About</a></li><li class="cur"><a href="projects.html">Projects</a></li><li class="cta-li"><a href="contact.html">Free Damage Assessment</a></li></ul><button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+<nav class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="insurance-claims.html">Insurance Claims</a></li>
+    <li><a href="commercial.html">Commercial</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Free Damage Assessment</a></li>
+  </ul>
+</nav></div></header>
 <div class="page-hero"><div class="wrap"><div class="eyebrow-pill">Our Work</div><h1>Real Projects. Real Results.</h1><p>From single-family homes to 25,000 sq ft commercial facilities — this is what 68 years of Houston roofing looks like on the job.</p><div class="hero-row"><div class="hstat"><div class="num" style="font-size:1.8rem;">Decades</div><div class="lbl">of Houston Work</div></div><div class="hstat"><div class="num">68</div><div class="lbl">Years in Houston</div></div><div class="hstat"><div class="num">100mi</div><div class="lbl">Service Radius</div></div></div></div></div>
 
 <section class="proj-section">
@@ -103,5 +130,34 @@ function lbBg(e){if(e.target.id==='lb-box')lbClose();}
 document.addEventListener('keydown',function(e){if(!document.getElementById('lb-box').classList.contains('open'))return;if(e.key==='ArrowRight')lbNav(1);if(e.key==='ArrowLeft')lbNav(-1);if(e.key==='Escape')lbClose();});
 function toggleMore(id,total){var el=document.getElementById(id+'-more');var btn=document.getElementById(id+'-btn');var open=el.classList.toggle('revealed');btn.innerHTML=open?'Show fewer photos &#9650;':'Show all '+total+' photos &#9660;';}
 function toggleVids(id){var el=document.getElementById(id);var lbl=document.getElementById(id+'-lbl');var open=el.classList.toggle('open');lbl.innerHTML=open?'&#9660; Hide':'&#9654; Tap to view';}
+</script>
+<script>
+(function(){
+  var btn=document.getElementById('hamburger');
+  var menu=document.getElementById('mobile-menu');
+  if(!btn||!menu)return;
+  btn.addEventListener('click',function(){
+    var open=menu.classList.toggle('open');
+    btn.classList.toggle('open',open);
+    btn.setAttribute('aria-expanded',open);
+    document.body.style.overflow=open?'hidden':'';
+  });
+  document.addEventListener('click',function(e){
+    if(!btn.contains(e.target)&&!menu.contains(e.target)){
+      menu.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      document.body.style.overflow='';
+    }
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      menu.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      document.body.style.overflow='';
+    });
+  });
+})();
 </script>
 </body></html>

@@ -36,11 +36,38 @@ footer{background:#0d1f52;padding:52px 0 28px;}.footer-grid{display:grid;grid-te
 .sc-section{background:var(--off);padding:60px 5%;}.sc-inner{max-width:1000px;margin:0 auto;}.sc-inner h2{font-size:clamp(1.6rem,2.5vw,2.2rem);color:var(--blue);margin-bottom:24px;}.sc-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}.sc-card{border-radius:8px;padding:24px;}.sc-card.bad{background:#fff5f5;border:1px solid #fecaca;}.sc-card.good{background:#f0f4ff;border:1px solid #c7d2fe;}.sc-card h4{font-size:1rem;margin-bottom:12px;}.sc-card.bad h4{color:var(--red);}.sc-card.good h4{color:var(--blue);}.sc-list{list-style:none;}.sc-list li{font-size:0.88rem;color:var(--g700);padding:6px 0;display:flex;gap:8px;line-height:1.5;}
 .cta-block{background:var(--red);border-radius:12px;padding:48px;text-align:center;color:#fff;}.cta-block h2{font-size:2rem;margin-bottom:12px;}.cta-block p{font-size:1rem;color:rgba(255,255,255,0.9);margin-bottom:28px;}.cta-phone{font-family:'Oswald',sans-serif;font-size:2.5rem;font-weight:700;color:#fff;text-decoration:none;display:block;margin-bottom:16px;}.btn-white-cta{background:#fff;color:var(--red);padding:16px 32px;border-radius:4px;text-decoration:none;font-family:'Oswald',sans-serif;font-size:1rem;font-weight:700;display:inline-block;}
 @media(max-width:800px){.team-grid,.sc-grid,.values-grid{grid-template-columns:1fr;}}
+
+.hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:38px;height:38px;background:none;border:none;cursor:pointer;padding:4px;flex-shrink:0;}
+.hamburger span{display:block;height:3px;background:var(--blue);border-radius:2px;transition:all .28s ease;}
+.hamburger.open span:nth-child(1){transform:translateY(8px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+.hamburger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
+.mobile-menu{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-top:1px solid var(--g200);border-bottom:3px solid var(--red);box-shadow:0 8px 24px rgba(0,0,0,.12);z-index:199;}
+.mobile-menu.open{display:block;}
+.mobile-menu ul{list-style:none;padding:8px 0;}
+.mobile-menu ul li a{display:block;padding:14px 24px;font-family:"Lato",sans-serif;font-size:1rem;font-weight:700;color:var(--blue);text-decoration:none;border-bottom:1px solid var(--g100);transition:background .15s,color .15s;}
+.mobile-menu ul li a:hover{background:var(--blue-lt);color:var(--red);}
+.mobile-menu ul li:last-child a{background:var(--red);color:#fff;text-align:center;border-bottom:none;margin:12px 16px;border-radius:4px;padding:14px 24px;}
+.mobile-menu ul li:last-child a:hover{background:var(--red-dk);}
+@media(max-width:960px){.hamburger{display:flex;}.nav-links{display:none !important;}.navbar{position:relative;}}
+
 </style>
 </head>
 <body>
 <div class="top-bar"><div class="wrap"><div class="top-bar-left"><div class="tbi"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="#888" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg><span>Houston, TX &#8212; Serving a 100-Mile Radius</span></div><div class="tbi"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="#888" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>Mon&ndash;Sat &nbsp;8 AM &ndash; 7 PM</span></div><div class="tbi"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="#888" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg><a href="mailto:info@mezageneralcontractors.com">info@mezageneralcontractors.com</a></div></div><div class="top-bar-right"><a href="tel:3462814358" class="top-phone">(346) 281-4358</a><a href="sms:3462814358" class="top-wa"><svg viewBox="0 0 24 24" fill="#fff" width="16" height="16"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>Text Us</a></div></div></div>
-<header class="navbar"><div class="wrap"><a href="index.html" class="nav-logo"><img src="https://raw.githubusercontent.com/avilaivan42-cyber/Meza-General-Contractors-/main/logo.png" alt="Meza General Contractors Logo"><div class="logo-wordmark"><span class="logo-name">MEZA GENERAL CONTRACTORS</span><span class="logo-tag">Roofing &amp; General Contracting &nbsp;&middot;&nbsp; Houston, TX &nbsp;&middot;&nbsp; Since 1958</span></div></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="insurance-claims.html">Insurance Claims</a></li><li><a href="commercial.html">Commercial</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li class="nav-cta"><a href="contact.html">Free Damage Assessment</a></li></ul></div></header>
+<header class="navbar"><div class="wrap"><a href="index.html" class="nav-logo"><img src="https://raw.githubusercontent.com/avilaivan42-cyber/Meza-General-Contractors-/main/logo.png" alt="Meza General Contractors Logo"><div class="logo-wordmark"><span class="logo-name">MEZA GENERAL CONTRACTORS</span><span class="logo-tag">Roofing &amp; General Contracting &nbsp;&middot;&nbsp; Houston, TX &nbsp;&middot;&nbsp; Since 1958</span></div></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="insurance-claims.html">Insurance Claims</a></li><li><a href="commercial.html">Commercial</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li class="nav-cta"><a href="contact.html">Free Damage Assessment</a></li></ul><button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+<nav class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="insurance-claims.html">Insurance Claims</a></li>
+    <li><a href="commercial.html">Commercial</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Free Damage Assessment</a></li>
+  </ul>
+</nav></div></header>
 <div class="page-hero"><div class="page-hero-inner"><div class="badge">About Us</div><h1>68 Years in Houston. One Family. One Standard.</h1><p>Since 1958, we haven't just survived Houston's history &mdash; we've built it. While others fly in for the storm, we've stood firm through Alicia, Ike, Harvey, and Beryl.</p></div></div>
 <section><div class="wrap" style="display:grid;grid-template-columns:1fr 1.5fr;gap:70px;align-items:start;"><div><div class="eyebrow">Our History</div><h2 class="section-title">68 Years Building Houston's Trust</h2><p style="font-size:0.95rem;color:var(--g700);line-height:1.8;">Meza General Contractors didn't become Houston's trusted roofer by accident. It happened job by job, claim by claim, and storm by storm — starting in 1958 and continuing through today.</p></div><div class="timeline"><div class="tl-item"><div class="tl-dot red"></div><div class="tl-year">1958</div><h4>Founded in Houston</h4><p>Meza General Contractors opens for business in Houston, TX. Residential roofing from day one, built on word-of-mouth trust and honest work.</p></div><div class="tl-item"><div class="tl-dot"></div><div class="tl-year">1970s</div><h4>Commercial Expansion</h4><p>Expanded into commercial roofing — warehouses, apartments, and retail centers. Built bonding capacity to serve larger projects.</p></div><div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2001</div><h4>Insurance Claims Specialization</h4><p>Experience has taught us that documentation is everything. We prioritize a complete damage assessment before a claim is even opened, ensuring our clients have the clear, undeniable facts they need to protect their investment.</p></div><div class="tl-item"><div class="tl-dot red"></div><div class="tl-year">2017</div><h4>Hurricane Harvey Response</h4><p>Harvey hit Houston with 60+ inches of rain and unprecedented wind damage. Meza General Contractors worked around the clock to help the community recover.</p></div><div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Today</div><h4>68+ Years &amp; Still Houston's First Call</h4><p>Now serving a 100-mile radius from Houston. English and Spanish. Still the same family, same values, same standard of work.</p></div></div></div></section>
 <div class="harvey"><div class="harvey-inner"><div class="eyebrow" style="color:#f0a0a0;">Hurricane Harvey &middot; 2017</div><h2>When Harvey Hit Houston, Meza General Contractors Stayed.</h2><p>Storm chasers flooded into Houston after Harvey — contractors from out of state with no knowledge of the city, its homes, or its people. They took deposits, filed bad claims, and disappeared.</p><p>Meza General Contractors had been in Houston since 1958. We weren't going anywhere. We worked every day through the aftermath — helping provide evidence for claim documentation, meeting adjusters, and replacing roofs for the community that had trusted us for decades.</p><blockquote><p>"When things get bad, you find out who your real contractors are. Meza General Contractors was here before Harvey and still here after. That means everything."</p></blockquote></div></div>
@@ -49,5 +76,34 @@ footer{background:#0d1f52;padding:52px 0 28px;}.footer-grid{display:grid;grid-te
 <section style="background:var(--off);"><div class="wrap"><div class="eyebrow">Our Values</div><h2 class="section-title">What Meza General Contractors Stands For</h2><div class="values-grid"><div class="value-card"><div class="value-icon">&#129309;</div><h4>Honest Assessments Only</h4><p>We are one of the only contractors in Houston who will tell you that you DON'T need a new roof. Because we want your business in 2036, not just today.</p></div><div class="value-card"><div class="value-icon">&#128737;&#65039;</div><h4>No Fake Reviews, No Shortcuts</h4><p>Every review we've earned is from a real customer. We don't buy ratings, inflate claims, or overpromise. Our reputation is built on 68 years of real work.</p></div><div class="value-card"><div class="value-icon">&#127968;</div><h4>Community First</h4><p>We live and work in Houston. When storms hit, we stay. We serve English and Spanish-speaking homeowners equally. This community is our community.</p></div></div></div></section>
 <section><div class="wrap"><div class="cta-block"><h2>68 Years of Houston Trust Behind Every Inspection.</h2><p>Call Meza General Contractors. Free Damage Assessment — same-day or next day.</p><a href="tel:3462814358" class="cta-phone">(346) 281-4358</a><a href="contact.html" class="btn btn-white-cta">Schedule Free Damage Assessment</a></div></div></section>
 <footer><div class="wrap"><div class="footer-grid"><div class="footer-brand"><div class="fn">MEZA GENERAL CONTRACTORS</div><p>Houston's roofing and insurance claims specialists since 1958. Residential and commercial. 100-mile service radius from Houston, TX.</p><div class="f-phone"><a href="tel:3462814358">(346) 281-4358</a></div></div><div><h5>Services</h5><ul><li><a href="insurance-claims.html">Insurance Claims</a></li><li><a href="commercial.html">Commercial Roofing</a></li><li><a href="contact.html">Residential Roofing</a></li><li><a href="contact.html">Seamless Gutters</a></li></ul></div><div><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="projects.html">Our Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><h5>Contact</h5><ul><li><a href="tel:3462814358">(346) 281-4358</a></li><li><a href="sms:3462814358">Text Us</a></li><li><a href="mailto:info@mezageneralcontractors.com">info@mezageneralcontractors.com</a></li><li>Houston, TX &mdash; Serving a 100-Mile Radius</li></ul></div></div><div class="footer-bottom"><div>&copy; 2026 Meza General Contractors. All rights reserved.<br><small style="font-size:.68rem;color:rgba(255,255,255,.28);">*Approval rates are based on historical project data and do not constitute a guarantee of future insurance policy outcomes. Results vary based on individual policy terms and coverage.</small></div><div>Houston, TX &middot; Founded 1958</div></div></div></footer>
+<script>
+(function(){
+  var btn=document.getElementById('hamburger');
+  var menu=document.getElementById('mobile-menu');
+  if(!btn||!menu)return;
+  btn.addEventListener('click',function(){
+    var open=menu.classList.toggle('open');
+    btn.classList.toggle('open',open);
+    btn.setAttribute('aria-expanded',open);
+    document.body.style.overflow=open?'hidden':'';
+  });
+  document.addEventListener('click',function(e){
+    if(!btn.contains(e.target)&&!menu.contains(e.target)){
+      menu.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      document.body.style.overflow='';
+    }
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      menu.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      document.body.style.overflow='';
+    });
+  });
+})();
+</script>
 </body>
 </html>
