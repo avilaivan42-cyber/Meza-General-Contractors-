@@ -67,7 +67,7 @@ Senior consultant + operator for Meza. Decisive, concise, no fluff. Make calls w
 - Denied claims → "access to independent attorneys" not "we fight for you"
 - Never use absolute claims like "ensuring nothing gets minimized or missed"
 - Frame as "documentation-first" not "claim-first"
-- $950 damage assessment data package — waived for full replacement partners
+- $950 damage-assessment data package — INTERNAL pricing only; the "waived" inducement was REMOVED from insurance-claims site copy (Session 8, regulator-risk). Do not re-add to the site.
 
 **Revenue Lines:**
 | Line | Margin/Job | Status |
@@ -75,7 +75,7 @@ Senior consultant + operator for Meza. Decisive, concise, no fluff. Make calls w
 | Insurance claims (PRIMARY) | $5K–$8K+ | High potential, marketing-led |
 | Cash/no-insurance | $1K–$2K | Saturated, secondary |
 
-**Services:** Roofing (residential + commercial), damage assessment + claim documentation support, seamless gutters, interior/exterior painting, denied-claim independent attorney referral, flexible financing for qualifying homeowners.
+**Services:** Roofing (residential + commercial), initial evaluation + claim documentation support, seamless gutters, interior/exterior painting, denied-claim independent attorney referral, flexible financing for qualifying homeowners.
 
 **North Star:** 10 inspections → 3-5 insurance jobs → $15K–$40K from $500 ad spend.
 **Current volume:** 2-3 jobs/month (word of mouth). **Target:** 15-20/month by end of Month 2.
@@ -154,12 +154,13 @@ All changes verified against actual file content (grep proof, not from memory). 
 
 **Section flow (top to bottom):**
 1. Hero — dark blue gradient
-2. The Reality of Storm Claims — white `#fff`
-3. The Process — light blue `var(--blue-lt)` = `#eef2fb`
-4. Real Results — white `#fff`
-5. Comparison table — light blue `var(--blue-lt)`
-6. CTA block + Legal notice — white `#fff` (CTA block itself is red)
-7. Footer — dark `#0d1f52`
+2. Trust bar — light blue `var(--blue-lt)` (Session 8)
+3. The Reality of Storm Claims — white `#fff`
+4. The Process — light blue `var(--blue-lt)` = `#eef2fb`
+5. Real Results — white `#fff` (Session 8: compact Google review strip `.g-rating-mini` at top)
+6. Comparison table — light blue `var(--blue-lt)`
+7. CTA block + Legal notice — white `#fff` (CTA block itself is red)
+8. Footer — dark `#0d1f52`
 
 ### ✅ SESSION 8 — COMPLETE (May 30, 2026)
 Verified against actual file content (grep + tag-balance, not memory). **Committed to `main` (commit `1d30512`) and verified byte-for-byte — May 30, 2026.**
@@ -208,17 +209,19 @@ Verified against actual file content (grep + tag-balance, not memory). **Committ
 - [ ] Terry 90-sec Spanish intro video (smartphone)
 
 ### ⏳ POST-LAUNCH — GROWTH
-- [ ] Real photos: replace index.html project card emoji placeholders (🏠🏢) + family section placeholder with real job photos and team photo — use squoosh.app → ~150KB WebP before upload
+- [ ] Real photos: add real before/after job photos to index project cards (now text + brand accent — emoji removed Session 8) + insurance-claims Real Results; team/family photos as available — use squoosh.app → ~150KB WebP before upload
 - [ ] Real photos: Mia, trucks, completed jobs — add to insurance-claims.html Real Results section
 - [ ] Compress WhatsApp photos (squoosh.app → ~150KB WebP) before upload
 - [ ] Facebook/Instagram/TikTok Business — complete setup
 - [ ] Paid ads — scale after proof of concept
 
 ### 📋 KNOWN OPEN ISSUES
-- contact.html: `YOUR_FORM_ID` — non-functional until Formspree set up
-- [LICENSE] placeholder — TX contractor license number still needed
+- contact.html: `YOUR_FORM_ID` — form is BUILT (Session 8); non-functional until the real Formspree endpoint replaces the placeholder + 1 test submission.
+- GA4: `G-XXXXXXXXXX` placeholder (2× per page, all 5) — no data until the real Measurement ID is pasted + key events marked.
+- Google review strips: `[4.9]`, `[40]+`, `[YOUR_GOOGLE_REVIEWS_URL]` placeholders (index full + insurance/contact compact) — populate from real GBP; hide until ~5 real reviews.
+- [LICENSE] placeholder — TX contractor license number still needed.
 - Links in Claude preview don't navigate — normal. Test in browser.
-- index.html project cards: emoji placeholder images — swap for real photos post-launch
+- Real photos still wanted (proof): index project cards are now text + brand accent (emoji removed Session 8); index + insurance Real Results need real before/after job photos.
 
 ---
 
@@ -243,6 +246,12 @@ Verified against actual file content (grep + tag-balance, not memory). **Committ
 - No hardcoded `#1E3A8A` in CSS rules — use `var(--blue)` (gradient exception only)
 - `.float-call` background → `var(--blue)` (fixed Session 4 — was hardcoded on all pages)
 - `:root{--blue:#1E3A8A}` variable definition is correct and NOT a violation — do not change
+- **(Session 8) 0 decorative emoji sitewide** — every icon is an inline SVG line icon; only allowed glyph is the review star `&#9733;` (gold `#fbbf24`).
+- **(Session 8) Credential trust bar on all 5 pages**, directly under the hero ("Insured · Family-Owned Since 1958 · English & Español · Houston + 100-Mile Radius", `var(--blue-lt)` bg).
+- **(Session 8) Section backgrounds = white ↔ `var(--blue-lt)` only** — 0 grey (`var(--off)`/`var(--g100)`) SECTION backgrounds (cards/boxes may still use grey).
+- **(Session 8) contact.html has a real `<form id="contact-form">`** → Formspree `YOUR_FORM_ID`; `_gotcha` honeypot present.
+- **(Session 8) GA4 on all 5** — gtag config `G-XXXXXXXXXX` (2×/page) + delegated events (generate_lead, contact_call/text/whatsapp/email).
+- **(Session 8) Tag balance** — every page balanced `<div>`/`</div>` and `<section>`/`</section>`.
 
 ---
 
