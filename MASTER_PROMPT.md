@@ -4,7 +4,7 @@
 ---
 
 ## CANONICAL SOURCE — GITHUB (read first)
-> ⚠️ **SESSION 8 (May 30, 2026): the repo is BEHIND.** index/about/commercial/contact/insurance-claims were all updated in Session 8 (trust bar, SVG icons, white/light-blue rhythm, contact FORM, GA4, Google review strips). These live ONLY in `meza-session8-final.zip` until Ivan commits them to `main`. Until then, do NOT pull `main` as truth — use the Session 8 bundle.
+> ✅ **SESSION 8 (May 30, 2026): repo is IN SYNC.** All 5 HTML pages + this MASTER_PROMPT were committed to `main` (commit `1d30512`) and verified byte-for-byte vs the Session 8 deliverable. `main` IS canonical — pull from it at session start. (Session 8 added: trust bar sitewide, emoji→SVG icons, white/light-blue rhythm, contact FORM, GA4, Google review strips.)
 GitHub repo **`avilaivan42-cyber/Meza-General-Contractors-`** (branch **`main`**) is the single source of truth for all live HTML. The 5 production pages there are current: index.html, about.html, commercial.html, contact.html, insurance-claims.html.
 - Claude's bash environment **CAN fetch directly** (raw.githubusercontent.com / git clone) — no need to upload files each session. Pull from `main` at session start.
 - raw `main` URL can serve a stale CDN copy for a few minutes; for authoritative checks use the commit SHA or the API.
@@ -162,7 +162,7 @@ All changes verified against actual file content (grep proof, not from memory). 
 7. Footer — dark `#0d1f52`
 
 ### ✅ SESSION 8 — COMPLETE (May 30, 2026)
-Verified against actual file content (grep + tag-balance, not memory). **Newer than GitHub `main` — commit the Session 8 bundle first.**
+Verified against actual file content (grep + tag-balance, not memory). **Committed to `main` (commit `1d30512`) and verified byte-for-byte — May 30, 2026.**
 
 **Sitewide consistency pass (all 5 pages):**
 - **Credential trust bar** now under the hero on ALL pages (was index-only): "Insured · Family-Owned Since 1958 · English & Español · Houston + 100-Mile Radius", brand-blue inline-SVG icons, `var(--blue-lt)` bg.
@@ -195,7 +195,8 @@ Verified against actual file content (grep + tag-balance, not memory). **Newer t
 - [ ] **Google rating values** — populate `[4.9]`, `[40]+`, `[YOUR_GOOGLE_REVIEWS_URL]` (index full + insurance/contact compact); hide strips until ~5 real reviews.
 - [ ] **TX contractor license #** — still a `[LICENSE]` placeholder.
 - [ ] **Mia sign-off** — insurance-claims legal/case-card copy before publish.
-- [ ] **Deploy** — commit Session 8 bundle to GitHub `main` + upload to Hostinger `/public_html` (repo is currently behind).
+- [x] GitHub `main` — Session 8 bundle committed (commit `1d30512`) + verified byte-for-byte.
+- [ ] **Deploy to Hostinger** — upload the 5 HTML files (+ `logo.png`) to `/public_html`. (Confirm whether Hostinger auto-serves from the repo or needs a manual upload.)
 - [x] Mia review: contact.html Spanish copy — CLOSED. English-only site.
 
 ### ⏳ POST-LAUNCH — WEEK 1 (in priority order)
