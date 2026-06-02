@@ -1,0 +1,31 @@
+MEZA SITE — DEPLOY / FIX STEPS  (Session 9, corrected)
+
+PROBLEM FIXED: the repo had *_preview.html files (viewing-only) and the real
+pages were deleted. Previews break as a live site (no index.html, all menu
+links 404, base64 photos not indexable).
+
+DO THIS IN THE GITHUB REPO (avilaivan42-cyber/Meza-General-Contractors-, main):
+
+1) DELETE these 5 files (they are not the site):
+   - index_preview.html
+   - about_preview.html
+   - commercial_preview.html
+   - contact_preview.html
+   - insurance-claims_preview.html
+
+2) UPLOAD everything in this zip to the repo ROOT (Add file -> Upload files,
+   drag them all in, Commit):
+   - 5 pages: index.html, about.html, commercial.html, contact.html, insurance-claims.html
+   - 13 photos: *.webp  (these sit at the root, next to logo.png)
+
+3) That is it. The pages reference the photos by full GitHub raw URL
+   (same method your logo already uses), so they render as soon as the .webp
+   files are in the repo - no images/ subfolder to manage, nothing else to do.
+
+NOTE: the photos load from GitHub raw URLs (like the logo). That is the
+existing pattern. If you later move hosting fully to same-origin on
+mezageneralcontractors.com, tell me and I'll switch the photo paths to
+same-origin for a small SEO bump.
+
+STILL OUTSTANDING (unchanged launch blockers): Formspree ID, GA4 ID,
+Google rating values, TX license number.
