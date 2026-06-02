@@ -1,15 +1,17 @@
 # MEZA GENERAL CONTRACTORS — MASTER PROMPT
-**Updated:** May 30, 2026 — Session 8 | **Status:** Single source of truth. Edits go here, not into new docs.
+**Updated:** June 1, 2026 — Session 9 | **Status:** Single source of truth. Edits go here, not into new docs.
 
 ---
 
 ## CANONICAL SOURCE — GITHUB (read first)
-> ✅ **SESSION 8 (May 30, 2026): repo is IN SYNC.** All 5 HTML pages + this MASTER_PROMPT were committed to `main` (commit `1d30512`) and verified byte-for-byte vs the Session 8 deliverable. `main` IS canonical — pull from it at session start. (Session 8 added: trust bar sitewide, emoji→SVG icons, white/light-blue rhythm, contact FORM, GA4, Google review strips.)
+> ✅ **SESSION 9 (June 1, 2026): repo `main` IS in sync + verified.** Latest commit `f227ff0`. The 5 production pages (index/about/commercial/contact/insurance-claims) + **13 optimized WebP photos at repo ROOT** are committed. All 13 photo URLs verified HTTP 200. The `_preview.html` files were a brief detour and have been deleted — they are NOT the site (see Key Learnings). `main` is canonical — pull from it at session start.
 GitHub repo **`avilaivan42-cyber/Meza-General-Contractors-`** (branch **`main`**) is the single source of truth for all live HTML. The 5 production pages there are current: index.html, about.html, commercial.html, contact.html, insurance-claims.html.
 - Claude's bash environment **CAN fetch directly** (raw.githubusercontent.com / git clone) — no need to upload files each session. Pull from `main` at session start.
-- raw `main` URL can serve a stale CDN copy for a few minutes; for authoritative checks use the commit SHA or the API.
-- **projects.html DELETED** from repo (confirmed at commit 9fe89ea). Page was cancelled — do not recreate.
-- Loose unreferenced assets in repo (terry-meza.jpg, terry-meza-cropped_3.jpg, WhatsApp images/videos) are raw files; live pages use base64-embedded photos. Hostinger deploys the repo folder.
+- raw `main` URL can serve a stale CDN copy for a few minutes; for authoritative checks use the commit SHA or the API. (GitHub **API** can rate-limit unauthenticated; raw fetches are the reliable fallback.)
+- Claude **cannot push** to the repo (no write credentials) — commits are Ivan's.
+- **projects.html DELETED** from repo (confirmed at commit 9fe89ea). Page was cancelled — do not recreate. Real job photos now live INSIDE the money pages (Session 9), which was always the plan.
+- **(Session 9) Project photos live at repo ROOT** (13 `*.webp`, alongside `logo.png`) and are referenced by **full raw GitHub URLs** (`https://raw.githubusercontent.com/avilaivan42-cyber/Meza-General-Contractors-/main/<name>.webp`) — same pattern the logo already uses. **No `images/projects/` subfolder** (the relative-folder plan was dropped to remove the upload-the-folder friction). Terry portrait is base64 in about.html + index family section.
+- Loose unreferenced source assets in repo root (WhatsApp images/videos from the May 12 residential + May 13 commercial jobs, terry-meza*.jpg) are raw originals. Hostinger deploys the repo folder.
 
 ---
 
@@ -97,110 +99,52 @@ Senior consultant + operator for Meza. Decisive, concise, no fluff. Make calls w
 ## WEBSITE STATUS
 
 ### ✅ DONE — LOCKED (do not modify without explicit instruction)
-- **about.html** — Terry photo embedded (base64). Projects link removed from footer. top-wa/float-call var(--blue). **Session 8: trust bar + SVG icons + white/light-blue section rhythm applied; Session 8 version is canonical.** Stable — modify only on explicit instruction.
-- **contact.html** — complete pending Formspree ID. Spanish section removed (English-only decision). `YOUR_FORM_ID` placeholder expected. top-wa var(--blue). float-call var(--blue).
-- **commercial.html** — complete. 68+ → 68 fixed. top-wa var(--blue). float-call var(--blue).
-- **insurance-claims.html** — Session 3 complete. All rules clean. float-call var(--blue).
-
-### ✅ COMPLETE — Session 4 (index.html)
-- **index.html** — Major Session 4 overhaul. Further updated Session 6.
-
-**Current state as of Session 6 end:**
-- ✅ `<title>`: "Meza General Contractors | Houston Roofing & Insurance Claims Since 1958"
-- ✅ Navbar tagline: "Houston Roofing & Insurance Claims Since 1958"
-- ✅ Hero eyebrow: "HOUSTON'S TRUSTED ROOFERS SINCE 1958" — blue pill (NOT red — intentional design decision)
-- ✅ Hero H1: "Nearly 70 years protecting Houston homes."
-- ✅ Hero subtitle: "At Meza General Contractors, we don't improvise after a storm…" (Alicia, Ike, Harvey, Beryl)
-- ✅ Hero solution box: white card, red top border, soft shadow. "paying out-of-pocket", "Texas-tough roof replacement", "true Texas transparency"
-- ✅ Hero CTAs: "Schedule Your Free Initial Evaluation" (red) + "(346) 281-4358" (blue outline)
-- ✅ Projects section: Katy (storm), Spring (wind), Houston commercial (TPO)
-- ✅ Who We Are / family section (before footer):
-  - Terry's base64 photo embedded — `width:100%;height:auto;display:block;border-radius:12px` (no fixed height, no object-fit — cropping issue resolved Session 6)
-  - "A Houston family. 68 years of earned trust."
-  - Mia-approved copy: "Terry brings decades of field experience to every project — not just as an owner, but as the person who trained the crew doing your assessment. When Meza is on your roof, you have someone who's seen thousands of Houston homes and knows exactly what storm damage looks like before an insurer ever does."
-  - Buttons: "Learn Our History" → about.html | "Schedule Your Free Evaluation" → contact.html
-- ✅ Eyebrow font-size standardized to .85rem across all 5 pages (Session 6)
-
-### 📦 SESSION 6 FINAL DELIVERY
-All 5 files confirmed clean. Delivered as `meza-session6-final.zip`.
-Canonical source going forward: **GitHub `main`** (see CANONICAL SOURCE at top) — no manual upload needed.
+- **about.html** — Terry photo embedded (base64). Projects link removed from footer. top-wa/float-call var(--blue). Session 8 trust bar + SVG icons + white/light-blue rhythm canonical. **Session 9: UNCHANGED (byte-for-byte from main).** Stable — modify only on explicit instruction.
+- **contact.html** — complete pending Formspree ID. Spanish section removed (English-only decision). `YOUR_FORM_ID` placeholder expected. top-wa/float-call var(--blue). **Session 9: UNCHANGED (byte-for-byte from main).**
+- **commercial.html** — complete. 68+ → 68 fixed. **Session 9: real Before→After photo showcase added (see Session 9 block).** float-call var(--blue).
+- **insurance-claims.html** — **Session 9: real residential documentation gallery added to Real Results (see Session 9 block).** All rules clean. float-call var(--blue).
+- **index.html** — Session 4 overhaul, Session 6 updates. **Session 9: real photos added to both project cards.**
 
 ### ✅ SESSION 7 — COMPLETE (May 29, 2026)
-All changes verified against actual file content (grep proof, not from memory). Repo `main` = these versions, md5-confirmed.
-- **Sitewide terminology sweep:** "Damage Assessment" → "Free Initial Evaluation" (28 → 0), including nav CTAs, `<title>`s, OG tags, all 5 pages.
-- **insurance-claims.html:** hero → "68 years of storm-damage expertise on your side." + red sub-line "Free for Houston property owners."; bottom CTA box copy → "100% Free Initial Evaluation — Same or Next-Day Response • Data-Backed Readiness Before You File. / Get the facts straight before you call your insurer."; button → "Schedule your Free Initial Evaluation."
-- **about.html:** Our History colored bold (blue/red/blue); bottom CTA box → "100% Free Initial Evaluation — Same or Next-Day Response • True Texas Transparency."; section-sub "decades of Houston experience" → "68 years of Houston experience." KEPT "decades" in Terry's blurb ("68 years" would falsely imply Terry personally roofing since 1958) and in the Harvey paragraph (already says "Since 1958"). The "orphan </footer>" was a FALSE ALARM — it's a valid `<footer>` inside the Harvey `<blockquote>` (quote attribution); no change.
-- **contact.html:** hero → "Get your Free Initial Evaluation."; removed duplicate red CTA (kept white "Call Us"); moved "Every Day You Wait" red box above the contact methods; **added the MISSING site footer** (page previously had only an orphan `</footer>`, no footer content).
-- **index.html:** Process step-1 → "on-site Initial Evaluation"; project cards rebuilt — Spring/Wind card deleted (now 2 cards), card 1 = storm-documentation result (Houston, May 2026), card 3 = 25,000 sq ft commercial facility (dropped stale TPO tag).
-- **commercial.html:** removed hero 2nd sentence; rewrote "Plan Around Your Operations" body; Multi-Family card (dropped "hurricane damage" + "Insurance Claim" tag); Warehouse card (dropped weekend sentence + 3 tags); stats caps polished.
-- **Terry photo:** new photo (WhatsApp 2026-05-28 16.26.28) optimized to 1000px @ q82, base64-embedded on index family section + about team card; old blobs stripped (files got lighter).
-- **projects.html DELETED** from repo (was an orphan-accessible page with pre-sweep terminology).
+(Sitewide "Damage Assessment" → "Free Initial Evaluation" sweep; insurance/about/contact/index/commercial copy fixes; projects.html deleted; Terry photo re-optimized + base64. Verified by grep, md5-confirmed on `main`.)
 
-### 🔄 insurance-claims.html — DESIGN NOTES (read before touching this page)
-**Comparison section ("The Reality of Storm Claims"):**
-- Two bordered columns: red perimeter left (Without Meza), blue perimeter right (With Meza)
-- Row-based grid — each row its own `grid-template-columns:1fr 1fr` — rows always align
-- Column headers: single-line Oswald uppercase, white text on colored bg
-- Card labels: Lato 900, red left / blue right. Body: `.92rem`, `var(--g700)`, `line-height:1.7`
-- Max-width: 900px, centered with `margin:0 auto`
-- **NEVER use:** black backgrounds, glassmorphism, backdrop-filter, Montserrat, emoji in headers
-- **NEVER introduce new fonts** — Oswald + Lato only
-- Audience: normal Texas homeowners — clean, approachable, down-to-earth. Not VC/SaaS aesthetic.
+### ✅ SESSION 8 — COMPLETE (May 30, 2026) — committed `1d30512`, verified byte-for-byte
+- Credential trust bar sitewide; emoji→inline SVG icons (0 decorative emoji); white↔light-blue section rhythm (grey retired for SECTIONS); commercial nav CTA → "Request a Consultation"; fixed stray `</div>` in insurance Important Notice.
+- Contact form BUILT (`id="contact-form"` → Formspree `YOUR_FORM_ID`, `_gotcha` honeypot) — inert until real ID + 1 test.
+- GA4 + conversion events on all 5 (placeholder `G-XXXXXXXXXX` 2×/page) — no data until real ID + key events marked.
+- Google review strips (index full + insurance/contact compact) — all placeholders, hide until ~5 real reviews.
+- index testimonials (Robert G., Shonda W., James R.) confirmed genuine verbatim — keep word-for-word.
 
-**"Already Denied or Disputed?" card:**
-- White bg, `border-top:4px solid var(--red)`, border-radius 8px, max-width 800px
-- Eyebrow red, H3 blue
-- Two buttons: red primary "Talk to Us →", blue outline phone number
+### ✅ SESSION 9 — COMPLETE + COMMITTED (June 1, 2026) — on `main`, commit `f227ff0`, verified
+**Goal:** close the "Real visual proof" gap (was a C — thinnest spot on the site). Used real repo media from two May 2026 jobs (residential, May 12 / commercial, May 13). Screened clean: no faces, no readable addresses/plates, no claim paperwork. **Photo consent CONFIRMED by Mia/Terry for both properties** (June 1) — the "shown with property-owner permission" captions are accurate.
 
-**Section flow (top to bottom):**
-1. Hero — dark blue gradient
-2. Trust bar — light blue `var(--blue-lt)` (Session 8)
-3. The Reality of Storm Claims — white `#fff`
-4. The Process — light blue `var(--blue-lt)` = `#eef2fb`
-5. Real Results — white `#fff` (Session 8: compact Google review strip `.g-rating-mini` at top)
-6. Comparison table — light blue `var(--blue-lt)`
-7. CTA block + Legal notice — white `#fff` (CTA block itself is red)
-8. Footer — dark `#0d1f52`
-
-### ✅ SESSION 8 — COMPLETE (May 30, 2026)
-Verified against actual file content (grep + tag-balance, not memory). **Committed to `main` (commit `1d30512`) and verified byte-for-byte — May 30, 2026.**
-
-**Sitewide consistency pass (all 5 pages):**
-- **Credential trust bar** now under the hero on ALL pages (was index-only): "Insured · Family-Owned Since 1958 · English & Español · Houston + 100-Mile Radius", brand-blue inline-SVG icons, `var(--blue-lt)` bg.
-- **Emoji → inline SVG line icons everywhere** — 0 decorative emoji remain sitewide (incl. contact "Email Us" envelope). Review-strip stars are `&#9733;` in gold `#fbbf24` (rating convention, not a brand color).
-- **Emoji "photo" slots removed:** about "Meza Family" team card → white users icon; commercial project cards → blue top-accent (no emoji banner).
-- **Section rhythm = white ↔ light-blue sitewide; grey retired for sections** (commercial zero-down recolored solid-blue → blue-lt w/ white bordered cards + blue icons; both commercial grey sections → blue-lt; index `.services` → white; about Team→blue-lt, Why Different→white, Values→blue-lt).
-- **commercial nav CTA:** "Free Initial Evaluation" → "Request a Consultation" (desktop + mobile).
-- **Fixed pre-existing stray `</div>`** in insurance-claims "Important Notice". All 5 pages tag-balanced.
-
-**Conversion engine (NEW):**
-- **Contact form BUILT** (contact.html `id="contact-form"`; the "Fill Out Form" link now works). Real `<form>` → Formspree `action="https://formspree.io/f/YOUR_FORM_ID"`; fields name/phone/email/address/help_type(select)/message; `_gotcha` honeypot + `_subject`; accessible `<label>`s; `.lead-form`/`.lf-*` CSS. **NOT live until real Formspree ID + 1 test submission.**
-- **GA4 + conversion tracking, all 5 pages.** gtag loader+config (placeholder `G-XXXXXXXXXX`, 2× per page) + delegated script firing `generate_lead` (form), `contact_call` (tel:), `contact_text` (sms:), `contact_whatsapp` (wa.me), `contact_email` (mailto:). **No data until real `G-` ID + key events marked.**
-- **Google review strips** — index: full strip in testimonials (`.g-rating`/`.gr-*`, stars + `[4.9]` + `[40]+` + "Read Our Reviews on Google" → `[YOUR_GOOGLE_REVIEWS_URL]`); insurance + contact: compact (`.g-rating-mini`/`.grm-*`). All placeholders; populate from real GBP, hide until ~5 reviews.
-- index testimonials (Robert G., Shonda W., James R.) **confirmed by Ivan as genuine verbatim customer reviews** — keep word-for-word (customer's own words may name insurers/$; that is NOT a Meza claim).
-
-**Honest scorecard:** design ≈ A-; CONVERSION asset moved ~C+/B- → ~B. Form/GA4/review strips are **built, not activated** — inert until the account steps below are done. "High-converting" stays unproven until live + measured.
+- **Decision: did NOT revive projects.html.** Embedded the proof into the money pages instead, split by editorial fit. (projects.html stays cancelled.)
+- **13 optimized WebP committed at repo ROOT** (alongside logo.png), referenced by **full raw GitHub URLs** (matches the logo pattern — no `images/projects/` subfolder; the relative-folder plan was dropped after it caused repeated "forgot the folder" friction). Filenames: `commercial-before/after/crane/tearoff/detail`, `residential-flashing/decking/boot/field/flashing-line/repair`, `card-commercial`, `card-residential`. ~1.4MB total, all ≤~255KB (target ~150KB).
+- **commercial.html** — real **Before→After showcase** inside "Featured Projects" (old patched flat roof → new white TPO), + crane/tear-off/detail thumbnails. The two existing descriptive cards (Multi-Family, Warehouse) left intact below — NOT relabeled with this job's photos (honesty).
+- **insurance-claims.html** — real **"From Documentation to Repair" gallery** inside Real Results (after the 3 Homeowner's-Voice case cards): residential field/boots/decking/flashing = the documentation-first story. Section title stays "Recent Storm Damage Projects" — only the residential storm job lives here (commercial job belongs on commercial.html, hence the split).
+- **index.html** — real photo on BOTH project cards (`.proj-photo`, 200px object-fit cover). Residential card = new flashing shot; commercial card = white TPO after.
+- **Shared lightbox** — `pj-` prefixed CSS + one delegated JS (builds image arrays from each `.pj-gallery` in DOM order; ESC/arrow-key/click-out close). On commercial.html + insurance-claims.html. index cards are plain photos (no lightbox).
+- **No ImageObject schema added** — per rule #4 (standard SEO = AI SEO); descriptive alt text on every photo is the lever instead.
+- **Verified live (June 1):** all 13 raw photo URLs return HTTP 200; per-page photo refs = index 2 / commercial 5 / insurance 6 / about 0 / contact 0; nav links intact on all 5; 0 `_preview` refs; all 5 tag-balanced; 0 banned terms; 0 `projects.html` links.
+- **CTA wording decision (reaffirmed):** kept **"Free Initial Evaluation"** sitewide. A one-off session rule proposing "Get Immediate Support" was raised and REJECTED — locked standard wins.
 
 ### ❌ CANCELLED
-- **projects.html** — decision made not to build. No dedicated projects page. Real job photos to be added directly to insurance-claims.html Real Results section when available.
+- **projects.html** — no dedicated projects page. **Session 9 fulfilled the underlying need**: real before/after + documentation photos now embedded in index cards, insurance-claims Real Results, and commercial Featured Projects.
 
 ### 🔄 IN PROGRESS (Mia)
-- Facebook Business Page
-- Instagram Business
-- WhatsApp Business install
-- TikTok Business
+- Facebook Business Page / Instagram Business / WhatsApp Business install / TikTok Business
 
-### 🔴 BLOCKING LAUNCH (updated Session 8)
-- [ ] **Formspree form ID** — form is BUILT; replace `YOUR_FORM_ID` in contact.html + run one real test submission.
-- [ ] **GA4 Measurement ID** — replace `G-XXXXXXXXXX` (2× per page, all 5) + mark key events: generate_lead, contact_call, contact_text, contact_whatsapp.
-- [ ] **Google rating values** — populate `[4.9]`, `[40]+`, `[YOUR_GOOGLE_REVIEWS_URL]` (index full + insurance/contact compact); hide strips until ~5 real reviews.
+### 🔴 BLOCKING LAUNCH
+- [x] **Commit Session 9 to `main`** — DONE June 1, commit `f227ff0` (5 pages + 13 root WebP), verified (13 photo URLs HTTP 200, nav intact, 0 `_preview` refs).
+- [ ] **Confirm site is LIVE on Hostinger** — repo is correct, but the public domain only reflects it IF Hostinger pulls from the repo. **OPEN: does `mezageneralcontractors.com` auto-serve from the GitHub repo, or need a manual `/public_html` upload?** Resolve, then load the live URL and click through every menu link + check photos.
+- [ ] **Formspree form ID** — replace `YOUR_FORM_ID` in contact.html + one real test submission.
+- [ ] **GA4 Measurement ID** — replace `G-XXXXXXXXXX` (2×/page, all 5) + mark key events: generate_lead, contact_call, contact_text, contact_whatsapp.
+- [ ] **Google rating values** — populate `[4.9]`, `[40]+`, `[YOUR_GOOGLE_REVIEWS_URL]`; hide strips until ~5 real reviews.
 - [ ] **TX contractor license #** — still a `[LICENSE]` placeholder.
 - [ ] **Mia sign-off** — insurance-claims legal/case-card copy before publish.
-- [x] GitHub `main` — Session 8 bundle committed (commit `1d30512`) + verified byte-for-byte.
-- [ ] **Deploy to Hostinger** — upload the 5 HTML files (+ `logo.png`) to `/public_html`. (Confirm whether Hostinger auto-serves from the repo or needs a manual upload.)
-- [x] Mia review: contact.html Spanish copy — CLOSED. English-only site.
+- [x] **Photo consent** (both Session 9 jobs) — CONFIRMED June 1 (Mia/Terry).
 
-### ⏳ POST-LAUNCH — WEEK 1 (in priority order)
+### ⏳ POST-LAUNCH — WEEK 1 (priority order)
 - [ ] Google Business Profile — set up under info@ — DAY 1, not optional
 - [ ] Google Maps embed on contact page
 - [ ] Facebook ad — insurance claims video — $250
@@ -209,19 +153,27 @@ Verified against actual file content (grep + tag-balance, not memory). **Committ
 - [ ] Terry 90-sec Spanish intro video (smartphone)
 
 ### ⏳ POST-LAUNCH — GROWTH
-- [ ] Real photos: add real before/after job photos to index project cards (now text + brand accent — emoji removed Session 8) + insurance-claims Real Results; team/family photos as available — use squoosh.app → ~150KB WebP before upload
-- [ ] Real photos: Mia, trucks, completed jobs — add to insurance-claims.html Real Results section
-- [ ] Compress WhatsApp photos (squoosh.app → ~150KB WebP) before upload
+- [x] **Real before/after job photos** — DONE Session 9 (index cards + insurance Real Results + commercial Before→After), pending commit/deploy.
+- [ ] More real photos as available: Mia, trucks, additional completed jobs, team/family — add to insurance Real Results + commercial. Optimize via squoosh.app → ~150KB WebP (or reuse the Session 9 PIL pipeline: longest side ~1200–1400px, WebP q60–80) before upload.
+- [ ] Add the May-2026 job VIDEOS (1 residential, 8 commercial in repo root) where useful — short clips boost AI surface visibility.
 - [ ] Facebook/Instagram/TikTok Business — complete setup
 - [ ] Paid ads — scale after proof of concept
 
 ### 📋 KNOWN OPEN ISSUES
-- contact.html: `YOUR_FORM_ID` — form is BUILT (Session 8); non-functional until the real Formspree endpoint replaces the placeholder + 1 test submission.
-- GA4: `G-XXXXXXXXXX` placeholder (2× per page, all 5) — no data until the real Measurement ID is pasted + key events marked.
-- Google review strips: `[4.9]`, `[40]+`, `[YOUR_GOOGLE_REVIEWS_URL]` placeholders (index full + insurance/contact compact) — populate from real GBP; hide until ~5 real reviews.
-- [LICENSE] placeholder — TX contractor license number still needed.
-- Links in Claude preview don't navigate — normal. Test in browser.
-- Real photos still wanted (proof): index project cards are now text + brand accent (emoji removed Session 8); index + insurance Real Results need real before/after job photos.
+- **Live-site status unconfirmed** — repo `main` is correct + verified (commit `f227ff0`), but whether `mezageneralcontractors.com` reflects it depends on the Hostinger serving mechanism (open question). Load the live URL to confirm.
+- contact.html `YOUR_FORM_ID` — built, non-functional until real Formspree endpoint + 1 test.
+- GA4 `G-XXXXXXXXXX` placeholder (2×/page, all 5) — no data until real ID + key events marked.
+- Google review strips placeholders — populate from real GBP; hide until ~5 reviews.
+- `[LICENSE]` placeholder — TX contractor license number still needed.
+- Links/images in Claude preview don't navigate/render — normal. Test in browser (or use the embedded-image `*_preview.html` copies).
+
+---
+
+## KEY LEARNINGS
+- **Preview files are viewing-only — never ship them as the site.** Session 9 detour: the base64-embedded `*_preview.html` copies were briefly committed (and the real pages deleted). That breaks a live site three ways: (1) no `index.html` = no homepage; (2) nav/footer link to `index.html`/`about.html`/etc., so `*_preview.html` names 404 every menu click; (3) base64 photos have no image URL, killing image/AI indexability (against rule #2). **One canonical, correctly-named version of each page lives in the repo. Previews stay out of the repo.**
+- **Claude reads whatever is in the repo at fetch time** — Ivan does NOT need to curate/delete versions "so Claude won't get confused." Keep the repo as the clean source of truth for the *site*, not for Claude's benefit.
+- **Image hosting (resolved):** project photos = real `*.webp` files at repo ROOT via raw GitHub URLs (matches the existing logo pattern). Chosen over (a) a relative `images/projects/` subfolder — kept getting forgotten on upload/deploy — and (b) base64 — kills indexability + bloats pages. Raw URLs render the instant the files are in the repo, with no folder to manage.
+- **Verify deploys, don't assume:** after a push, fetch the raw HTML + HEAD/GET the image URLs (expect HTTP 200) and confirm nav links + 0 `_preview` refs. Repo-correct ≠ live-correct until the Hostinger serving path is confirmed.
 
 ---
 
@@ -230,50 +182,49 @@ Verified against actual file content (grep + tag-balance, not memory). **Committ
 
 **Audit checklist for all HTML files:**
 - No `68+` or `65+` — always `68 years` or `68`
-- No `[LICENSE]` placeholder
-- Float WhatsApp button → `https://wa.me/13462814358` (not `sms:`)
-- `top-wa` background → `var(--blue)` (never green, never hardcoded hex)
-- `top-wa:hover` → `#152d6b` (never WhatsApp green)
-- **NO 85% stat anywhere — eliminated site-wide**
-- **NO "Damage Assessment" anywhere — replaced by "Initial Evaluation" sitewide (Session 7); verify 0 instances**
-- Article guard: "an initial evaluation," never "a initial evaluation" (sweep artifact)
+- No `[LICENSE]` placeholder (still expected until license # confirmed)
+- Float WhatsApp button → `https://wa.me/13462814358`
+- `top-wa` background → `var(--blue)`; `top-wa:hover` → `#152d6b`
+- **NO 85% stat anywhere**
+- **NO "Damage Assessment" anywhere** — verify 0 instances
+- Article guard: "an initial evaluation," never "a initial evaluation"
 - No footer link to projects.html — page cancelled
 - Nav CTA: "Free Initial Evaluation" — except commercial: "Request a Consultation"
 - Terry photo base64 present in about.html
-- contact.html: `YOUR_FORM_ID` acceptable until Formspree set up
-- No black backgrounds — brand colors only
-- No third-party fonts — Oswald + Lato only
-- No hardcoded `#1E3A8A` in CSS rules — use `var(--blue)` (gradient exception only)
-- `.float-call` background → `var(--blue)` (fixed Session 4 — was hardcoded on all pages)
-- `:root{--blue:#1E3A8A}` variable definition is correct and NOT a violation — do not change
-- **(Session 8) 0 decorative emoji sitewide** — every icon is an inline SVG line icon; only allowed glyph is the review star `&#9733;` (gold `#fbbf24`).
-- **(Session 8) Credential trust bar on all 5 pages**, directly under the hero ("Insured · Family-Owned Since 1958 · English & Español · Houston + 100-Mile Radius", `var(--blue-lt)` bg).
-- **(Session 8) Section backgrounds = white ↔ `var(--blue-lt)` only** — 0 grey (`var(--off)`/`var(--g100)`) SECTION backgrounds (cards/boxes may still use grey).
-- **(Session 8) contact.html has a real `<form id="contact-form">`** → Formspree `YOUR_FORM_ID`; `_gotcha` honeypot present.
-- **(Session 8) GA4 on all 5** — gtag config `G-XXXXXXXXXX` (2×/page) + delegated events (generate_lead, contact_call/text/whatsapp/email).
-- **(Session 8) Tag balance** — every page balanced `<div>`/`</div>` and `<section>`/`</section>`.
+- No black backgrounds; no third-party fonts (Oswald + Lato only); no hardcoded `#1E3A8A` (use `var(--blue)`, gradient exception only)
+- `:root{--blue:#1E3A8A}` definition is correct — do not change
+- (Session 8) 0 decorative emoji sitewide; only allowed glyph is review star `&#9733;` (gold `#fbbf24`)
+- (Session 8) Credential trust bar on all 5 pages under the hero
+- (Session 8) Section backgrounds = white ↔ `var(--blue-lt)` only — 0 grey SECTION backgrounds (cards/boxes may use grey)
+- (Session 8) contact.html has real `<form id="contact-form">` → `YOUR_FORM_ID`; `_gotcha` present
+- (Session 8) GA4 on all 5 — `G-XXXXXXXXXX` (2×/page) + delegated events
+- (Session 8) Tag balance — every page balanced `<div>`/`</div>` and `<section>`/`</section>`
+- **(Session 9) All 13 project `*.webp` live at repo ROOT** and are referenced by full raw GitHub URLs (matches logo). Verify each URL returns HTTP 200 (raw CDN may lag a few min after a push). No `images/projects/` subfolder; no base64-embedded project photos in production.
+- **(Session 9) `pj-` lightbox** present on commercial + insurance (one `#pjlb` per page, one delegated script); index cards are plain `.proj-photo` images (no lightbox)
+- **(Session 9) Consent captions** ("shown with property-owner permission") on commercial + insurance galleries — accurate as of June 1 confirmation
+- **(Session 9) projects.html still absent**; real photos embedded in money pages only
 
 ---
 
 ## DESIGN SYSTEM (website)
-- Red `#C41E1E` / Blue `#1E3A8A`
+- Red `#C41E1E` / Blue `#1E3A8A` / hover blue `#152d6b` / light blue `var(--blue-lt)` = `#eef2fb`
 - Fonts: Oswald (headings) + Lato (body) — Lato weights: 400, 700, 900
 - Mobile-first, hamburger menu at 960px
-- Logo: `logo.png` (repo root) — served via GitHub raw URL in all HTML files
+- Logo: `logo.png` (repo root)
 - Year references: always "68 years" — never "65+" or "68+"
 - Section padding: `48px 0` on insurance-claims.html — `72px 0` on all other pages
-- Section alternating (Session 8): **white (`#fff`) ↔ light blue (`var(--blue-lt)`=`#eef2fb`) sitewide.** Grey (`var(--off)`/`var(--g100)`) RETIRED for SECTION backgrounds (0 allowed); still used for cards/boxes. CTA/disclaimer sections vary by page.
-- Content max-width: `.wrap` = 1160px; constrained sections = 860px–900px centered
-- Terry photo: base64 embedded in about.html — always include, never remove
-- **No black backgrounds** — off-limits in brand
-- **Bootstrap: considered and rejected** — do not add without explicit instruction
+- Section alternating (Session 8): **white (`#fff`) ↔ light blue (`var(--blue-lt)`).** Grey retired for SECTION backgrounds; still used for cards/boxes.
+- Content max-width: `.wrap` = 1160px; constrained sections = 860px–980px centered
+- Terry photo: base64 embedded in about.html (and index family section) — always include, never remove
+- **No black backgrounds. No glassmorphism. Bootstrap rejected.** Audience = everyday Houston homeowners, not VC/SaaS.
 - **Hero eyebrow on index.html: blue pill — intentional, do not change to red**
+- **(Session 9) Project imagery:** real photos as `*.webp` at repo ROOT, referenced by full raw GitHub URLs (same as logo.png), optimized to ~150KB (≤~255KB), longest side ~1200–1400px. Galleries use `pj-` prefixed classes + a shared delegated lightbox. Commercial uses a labeled **Before (red tag) / After (blue tag)** device; insurance uses a documentation-first lead+thumbnail layout. Descriptive alt text on every image (AI-SEO lever; no ImageObject schema needed). **Production never ships base64-embedded project photos** (kills image indexability) — those were viewing-only previews.
 
 ---
 
 ## COPY STANDARDS
-- "Free Initial Evaluation" — always this phrase (REPLACED "Free Damage Assessment" sitewide, Session 7, Mia-directed). Never "inspection." The term "Damage Assessment" is RETIRED — 0 instances allowed sitewide.
-- "Initial Evaluation" — capitalized throughout (e.g., "Free Initial Evaluation"). Watch the article: "an initial evaluation," never "a initial evaluation."
+- "Free Initial Evaluation" — always this phrase (REPLACED "Free Damage Assessment" sitewide, Session 7). Never "inspection." "Damage Assessment" RETIRED — 0 instances allowed. **(Session 9) "Get Immediate Support" alternative considered and REJECTED — "Free Initial Evaluation" is the locked nav/CTA standard.**
+- "Initial Evaluation" — capitalized. Article: "an initial evaluation," never "a initial evaluation."
 - "Homeowner's Responsibility Share" — not "deductible"
 - "68 years" — not "68+" or "65+"
 - Urgency line: "Every Day You Wait, the Damage Grows."
@@ -284,17 +235,15 @@ Verified against actual file content (grep + tag-balance, not memory). **Committ
 - No absolute claims: never "ensuring nothing gets minimized or missed"
 - Nav CTA: "Free Initial Evaluation" on all pages except commercial ("Request a Consultation")
 - Top bar "Text Us" button: blue `var(--blue)`, links to `sms:3462814358`
-- Float WhatsApp button: green `#25D366`, links to `https://wa.me/13462814358`
-- top-wa:hover: `#152d6b` (never WhatsApp green)
+- Float WhatsApp button: green `#25D366`, links to `https://wa.me/13462814358`; hover `#152d6b` (never WhatsApp green)
 - "Multi-generational" — confirmed accurate (Terry is second generation)
 - CTA buttons: "Talk to Us →" (not "Talk to Terry →")
 - **Never use 85% stat — eliminated**
 - Important Notice text: always center-justified
-- **Website language: English only.** Spanish-language form/page copy is prohibited. References to bilingual service capability ("También hablamos español", "English & Español") are English statements about service — they stay on all pages.
-- "paying out-of-pocket" — not "private-pay" (index.html solution box, locked)
-- "Texas-tough roof replacement" — index.html hero solution box phrase, locked
-- "true Texas transparency" — index.html hero solution box phrase, locked
+- **Website language: English only.** Spanish-language form/page copy prohibited. Bilingual-service references ("También hablamos español", "English & Español") are English statements about service — they stay.
+- "paying out-of-pocket" / "Texas-tough roof replacement" / "true Texas transparency" — index.html hero solution box phrases, locked
 - Hero CTAs on index: "Schedule Your Free Initial Evaluation" / "(346) 281-4358"
+- **(Session 9) Photo captions:** "Real Meza job ... shown with property-owner permission." — approved/accurate (consent confirmed June 1).
 
 ---
 
@@ -315,8 +264,7 @@ Property preservation, inspection, and compliance services for banks/lenders on 
 ---
 
 ## OPEN QUESTIONS
-1. TX contractor license number (for [LICENSE] placeholder in site) — pending
-2. ~~Formspree~~ — Hostinger may have native form handling via hPanel subscription. Confirm with Hostinger support before setting up Formspree. If Hostinger supports it: configure and drop endpoint into contact.html `YOUR_FORM_ID`. If not: set up Formspree free tier.
-3. ~~Mia review: contact.html Spanish copy~~ — CLOSED. Website is English only. Spanish-language form copy removed from contact.html. Spanish service capability references (insurance-claims.html Spanish paragraph, "English & Español" CTA line, WhatsApp tooltip) are NOT affected — these are English-language statements of bilingual service capability and stay on all pages.
-4. Hostinger form tool — Ivan to confirm today whether hPanel includes native form/email handling equivalent to Formspree. Priority: resolve before launch.
-5. Spanish copy reconciliation — this doc's ACTIVE section describes a Spanish service paragraph on insurance-claims.html, but the **current production file contains NO Spanish paragraph** (only minimal "Español" CTA references remain on index/commercial; contact.html is English-only). Mia to confirm: re-add the Spanish service paragraph or keep English-only. (Flagged Session 7.)
+1. TX contractor license number (for [LICENSE] placeholder) — pending.
+2. Hostinger native form handling (hPanel) vs Formspree — confirm before launch; drop endpoint into contact.html `YOUR_FORM_ID`.
+3. **(Session 9) Hostinger deploy mechanism** — does `mezageneralcontractors.com` auto-serve from the GitHub repo, or need a manual `/public_html` upload? Repo is correct; this is the only thing between the repo and a confirmed-live site. (Project photos load from raw GitHub URLs regardless, so no image folder to ship.)
+4. Spanish copy reconciliation — production files are English-only (only "Español" service references remain). Mia to confirm: re-add a Spanish service paragraph or keep English-only. (Flagged Session 7.)
